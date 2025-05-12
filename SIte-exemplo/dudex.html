@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Você 💖</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffe6f0, #ffe6ff);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 40px;
+      color: #cc3366;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.3em;
+      margin: 20px 0;
+    }
+    img {
+      width: 250px;
+      border-radius: 20px;
+      margin: 20px auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    button {
+      background-color: #ff99cc;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      cursor: pointer;
+      border-radius: 10px;
+      margin-top: 30px;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #e06699;
+    }
+  </style>
+</head>
+<body>
+  <h1>Para a Dudex😝🤟</h1>
+  <p>Esse é um presente feito só para você!<br>
+     Eu te amo mais a cada dia e quis criar esse espaço para te lembrar o quanto é especial. 💖</p>
+
+
+  <p id="mensagem">Clique no botão para ler uma mensagem fofa 🥰</p>
+
+  <button onclick="mostrarMensagem()">Me surpreenda!</button>
+
+  <script>
+    const mensagens = [
+      "Você é a razão do meu sorriso todos os dias.",
+      "Com você, o mundo é mais bonito!",
+      "Cada momento ao seu lado vale ouro.",
+      "Se eu pudesse te dar algo, daria o mundo. Mas tem muito homem e eu sou ciumento. 💕",
+      "Prometo sempre te fazer sorrir.",
+      "Com muito amor e carinho, prometo te fazer uma mulher feliz",
+      "Quero que você se lembre o quanto eu amo você, e toda sua familia",
+      "Nunca vou deixar você ir embora meu amor",
+      "Cada dia longe de você me parece uma tortura",
+      "Não tiro vc da minha cabeça desde aquele dia na sorveteria, nosso primeiro beijo sem saber se era reciproco",
+      "A felicidade ao descobrir que a gente se completava, o quão cego eu era por não reparar que você era tudo que eu precisava",
+      "Espero anciosamente para o dia do pedido de namoro, que vou falar, tá mais perto doq eu me lembre🤫",
+      "Como começou nos não sabemos, só sabemos que, daqui pra frente seramos nós dois até o fim",
+      "Que se foda quem ficar para trás",
+      "O que não posso deixar para trás é todos esses sonhos que compartilhamos em comum",
+      "Todos esses momentos que estamos compartilhando, parecem magicos, tem muitas pessoas que vão ficar para trás",
+      "Eu paro de conversar, excluo quem for da minha vida para te ter para sempre",
+      "Eu vou confrontar tudo e todos por você, eu espero que nada nessa vida impossibilite você de se lembrar o quanto o meu amor por você é gigante",
+      "Se um dia o mundo te virar as costas, eu viro ele inteiro só pra te ver sorrir de novo.",
+      "Você é meu porto seguro, minha calmaria no meio do caos.",
+      "Eu sei que não sou perfeito, mas meu amor por você é,e sempre vai ser.",
+      "Cada plano de futuro que faço tem você segurando minha mão.",
+      "Se depender de mim, você nunca mais vai conhecer a dor da solidão.",
+      "Eu não quero te perder nem por um segundo, porque a vida sem você não faz sentido.",
+      "Quero construir uma vida com você, cheia de risos, aconchego e histórias pra contar.",
+      "Se eu pudesse, parava o tempo em cada abraço seu.",
+      "Você me faz acreditar que o amor verdadeiro existe, e que sorte a minha ele ser você.",
+      "Não importa o que aconteça, minha escolha sempre será você ontem, hoje e todos os amanhãs.",
+      "Você é meu lar, Dudex, não importa onde a gente esteja.",
+      "Te encontrar foi como respirar depois de ficar tempo demais sem ar.",
+      "Não tem um só dia que eu não agradeça por ter você, Dudex, do jeitinho que você é.",
+      "Teu sorriso é meu combustível, minha paz, meu vício bom.",
+      "Se o mundo desabar, eu corro pro seu abraço… porque ali, nada me machuca.",
+      "Dudex, cada detalhe seu é arte pra mim sua voz, seu olhar, até seu jeitinho bravo.",
+      "Às vezes paro e penso: como eu tive tanta sorte de chamar você de minha?",
+      "Você me cura só com presença, me levanta com uma mensagem, me acalma só com um ‘oi’.",
+      "Se o amor é loucura, então me interna, porque por você eu já perdi todo juízo.",
+      "Não tem ninguém que me entenda como você, Dudex... e é por isso que eu sei: a gente nasceu pra ser um do outro.",
+      "Não quero um conto de fadas, quero só eu e você, com sinceridade, risadas e amor de verdade.",
+      "Meu maior medo? Te ver partir. Meu maior sonho? Te ver comigo em cada amanhã.",
+      "Você merece o mundo, Dudex, e eu vou passar a vida tentando te dar pelo menos metade disso com meu amor.",
+      "Não sei o que vem depois da vida, mas se tiver algo, quero te amar até lá e além.",
+      "Com você, o tempo passa voando… e ao mesmo tempo, tudo parece parar só pra gente se olhar.",
+      "Promete que a gente nunca vai desistir um do outro? Porque eu não aguentaria me perder de você.",
+      "Você é o meu amor favorito, minha paz preferida, minha escolha de todos os dias, Dudex.",
+      "Se amar fosse um crime, eu aceitaria prisão perpétua por você.",
+      "Mesmo nos dias ruins, com você, tudo ainda vale a pena.",
+      "E se alguém me perguntar o que é amor… vou só sorrir e dizer: Dudex.",];
+
+    let index = 0;
+    function mostrarMensagem() {
+      document.getElementById('mensagem').innerText = mensagens[index];
+      index = (index + 1) % mensagens.length;
+    }
+  </script>
+</body>
+</html>
