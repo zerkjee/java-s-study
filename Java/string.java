@@ -8,5 +8,4 @@ public class string {
     public String toString() {
         return "string []";
     }
-
-}
+ }
