@@ -9,4 +9,3 @@ public class string {
         return "string []";
     }
  }
-public static void main(String) 
