@@ -1,12 +1,8 @@
-CREATE DATABASE teste;
+create DATABASE CIRCO;
 
-USE teste;
-
-CREATE TABLE exemplo (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  nome VARCHAR(100)
-);
-
-INSERT INTO exemplo (nome) VALUES ('Teste 1');
-
-SELECT * FROM exemplo;
+	CREATE TABLE EVENTO(
+		IDVENTO INT 
+        NOME VARCHAR(100)
+        DATAEVENTO DATE
+        HORAEVENTO TIME
+        )
