@@ -3,7 +3,7 @@ CREATE DATABASE teste;
 USE teste;
 
 CREATE TABLE exemplo (
-  id INT AUTO_INCREMENT PRIMARY KEY,
+  id INT  PRIMARY KEY,
   nome VARCHAR(100)
 );
 
