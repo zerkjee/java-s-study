@@ -1,1 +1,1 @@
-numero = int(input("asd"))
+numero = int(input("digite um numero"))
