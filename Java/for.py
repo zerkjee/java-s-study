@@ -1,2 +1,3 @@
-for i in range(5):
-    print(i+1)
+frutas = ["Maçã", "Banana", "Melancia"]
+for x in frutas:
+    print(x)
