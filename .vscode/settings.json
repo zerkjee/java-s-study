@@ -26,5 +26,6 @@
             "database": "testdb",
             "username": "root"
         }
-    ]
+    ],
+    "C_Cpp.errorSquiggles": "disabled"
 }
