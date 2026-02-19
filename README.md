@@ -1,2 +1,1 @@
-# dudex
-Paginas de estudos
+
