@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         int x = 5;
 
-        while (x > 2) {
+        while (x > 4) {
             System.out.println(x);
             x--;
         }
