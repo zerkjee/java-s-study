@@ -16,7 +16,7 @@ public class calculadora {
         String op = sc.next();
 
         double resultado;
-
+addsas
 
         if(op.equals("+")) {
             resultado = n1 + n2;
