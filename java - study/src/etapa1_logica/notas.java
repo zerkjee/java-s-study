@@ -13,11 +13,11 @@ public class notas {
         System.out.println("Digite a quarta nota: ");
         float nota4 = sc.nextFloat();
 
-        float media = (nota + nota2 + nota3 + nota4) / 2;
-        if (media <= 5) {
+        float media = (nota + nota2 + nota3 + nota4) / 4;
+        if (media < 5) {
             System.out.print("Você foi reprovado com " + media + "de media");
         }
-        else if(media >5 && media < 7) {
+        else if(media < 7) {
             System.out.println("Você ficou de recuperação com " + media + "de media");
         }
         else {
