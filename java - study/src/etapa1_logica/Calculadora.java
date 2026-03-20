@@ -14,31 +14,27 @@ public class Calculadora {
         double n2 = sc.nextDouble();
 
         System.out.print("Escolha a operação (+, -, *, /): ");
-        String op = sc.next(); // lê apenas 1 palavra/símbolo
+        String op = sc.next().trim();
 
         double resultado = 0;
 
-        if (op.equals("+")) {
-            resultado = n1 + n2;
-
-        } else if (op.equals("-")) {
-            resultado = n1 - n2;
-
-        } else if (op.equals("*")) {
-            resultado = n1 * n2;
-
-        } else if (op.equals("/")) {
-            if (n2 == 0) {
-                System.out.println("Erro: divisão por zero!");
-                return;
-            }
-            resultado = n1 / n2;
-
-        } else {
-            System.out.println("Operação inválida!");
-            return;
+        switch (op) {
+            case "+":
+                resultado = n1 + n2;
+                break;
+            case "-":
+                resultado = n1 - n2;
+                break;
+            case  "*":
+                resultado = n1 * n2;
+                break;
+            case "/":
+                resultado = n1 / n2;
+                break;
+                default:
+                    System.out.println("Operação inválida");
+                    return;
         }
-
         System.out.println("Resultado: " + resultado);
     }
 }
